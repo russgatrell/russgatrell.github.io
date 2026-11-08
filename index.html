@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Russ Gatrell | Financial Data &amp; Reconciliation Analyst</title>
+<meta name="description" content="Russ Gatrell is a financial data and reconciliation analyst in Utah with 20+ years of SQL. For 13 years at Overstock.com he built the reconciliations and reporting behind a public company's books.">
+<meta name="author" content="Russ Gatrell">
+<link rel="canonical" href="https://russgatrell.github.io/">
+<link rel="icon" href="favicon.png" type="image/png">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Russ Gatrell | Financial Data & Reconciliation Analyst">
+<meta property="og:description" content="I balance billion-dollar checkbooks. 20+ years of SQL; 13 years owning reconciliation and financial reporting at Overstock.com.">
+<meta property="og:url" content="https://russgatrell.github.io/">
+<meta property="og:image" content="https://russgatrell.github.io/og.png">
+<meta property="profile:first_name" content="Russ">
+<meta property="profile:last_name" content="Gatrell">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Russ Gatrell",
+  "alternateName": "Russell Gatrell",
+  "givenName": "Russ",
+  "familyName": "Gatrell",
+  "url": "https://russgatrell.github.io/",
+  "image": "https://russgatrell.github.io/portrait.png",
+  "jobTitle": "Financial Data & Reconciliation Analyst",
+  "description": "Financial data and reconciliation analyst with 20+ years of SQL, including 13 years owning cash and transaction reconciliation at Overstock.com / Beyond, Inc.",
+  "address": {"@type": "PostalAddress", "addressRegion": "UT", "addressCountry": "US"},
+  "alumniOf": {"@type": "CollegeOrUniversity", "name": "University of Utah"},
+  "knowsAbout": ["Financial reconciliation", "Payments data", "SQL", "Google BigQuery", "Teradata", "Oracle", "SQL Server", "Python", "SOX controls", "Unclaimed property (escheatment)"],
+  "sameAs": [
+    "https://www.linkedin.com/in/russ-gatrell-finance-bi-dev",
+    "https://github.com/russgatrell"
+  ]
+}
+</script>
+<style>
+  :root {
+    --paper: #f7f5f0;
+    --ink: #1b1b1b;
+    --muted: #5d5a54;
+    --rule: #d9d4ca;
+    --accent: #1f6f5c;
+    --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 17px/1.65 var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:hover { text-decoration-thickness: 2px; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+  nav { border-bottom: 1px solid var(--rule); }
+  nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 56px; font-family: var(--mono); font-size: 14px; }
+  nav .brand { font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: .02em; }
+  nav ul { list-style: none; display: flex; gap: 22px; margin: 0; padding: 0; }
+  nav ul a { color: var(--muted); text-decoration: none; }
+  nav ul a:hover { color: var(--ink); }
+
+  header.hero { padding: 72px 0 56px; }
+  .hero .wrap { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: center; }
+  .eyebrow { font-family: var(--mono); font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: 0 0 14px; }
+  h1 { font-size: clamp(40px, 6vw, 64px); line-height: 1.05; margin: 0 0 18px; letter-spacing: -.02em; }
+  .lede { font-size: 22px; line-height: 1.45; margin: 0 0 22px; }
+  .lede em { font-style: normal; background: linear-gradient(transparent 62%, #cfe6dd 62%); }
+  .hero p.sub { color: var(--muted); margin: 0 0 28px; }
+  .links { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn { display: inline-block; font-family: var(--mono); font-size: 14px; padding: 10px 16px; border: 1.5px solid var(--ink); color: var(--ink); text-decoration: none; border-radius: 2px; }
+  .btn.primary { background: var(--ink); color: var(--paper); }
+  .btn:hover { transform: translateY(-1px); }
+  figure.portrait { margin: 0; text-align: center; }
+  figure.portrait img { width: 100%; max-width: 340px; height: auto; mix-blend-mode: multiply; }
+  figure.portrait figcaption { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-top: 8px; }
+
+  section { padding: 56px 0; border-top: 1px solid var(--rule); }
+  h2 { font-family: var(--mono); font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 28px; font-weight: 600; }
+  h3 { font-size: 21px; margin: 0 0 6px; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  .prose p { margin: 0 0 16px; max-width: 64ch; }
+
+  .ledger { width: 100%; border-collapse: collapse; font-size: 16px; }
+  .ledger td { padding: 14px 0; border-bottom: 1px dashed var(--rule); vertical-align: top; }
+  .ledger td.num { font-family: var(--mono); font-weight: 700; font-size: 22px; width: 7.5em; color: var(--accent); white-space: nowrap; padding-right: 18px; }
+
+  .jobs { list-style: none; padding: 0; margin: 0; }
+  .jobs li { display: grid; grid-template-columns: 9.5em 1fr; gap: 18px; padding: 14px 0; border-bottom: 1px dashed var(--rule); }
+  .jobs .when { font-family: var(--mono); font-size: 14px; color: var(--muted); padding-top: 3px; }
+  .jobs .what strong { display: block; }
+  .jobs .what span { color: var(--muted); font-size: 15px; }
+
+  .skills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; padding: 0; list-style: none; }
+  .skills li { font-family: var(--mono); font-size: 13px; padding: 4px 10px; border: 1px solid var(--rule); background: #fff; border-radius: 2px; }
+
+  .project { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; margin-bottom: 48px; }
+  .project:last-child { margin-bottom: 0; }
+  .viewer { background: #fff; border: 1px solid var(--rule); padding: 18px; }
+  .stage { height: 360px; overflow: auto; display: flex; background: #fff; }
+  .stage img { margin: auto; }
+  .stage img { image-rendering: pixelated; image-rendering: crisp-edges; display: block; transition: width .05s linear; }
+  .viewer label { display: flex; align-items: center; gap: 12px; font-family: var(--mono); font-size: 13px; color: var(--muted); margin-top: 14px; }
+  .viewer input[type=range] { flex: 1; accent-color: var(--accent); }
+  .hint { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-top: 8px; min-height: 1.5em; }
+
+  footer { border-top: 1px solid var(--rule); padding: 32px 0 48px; font-family: var(--mono); font-size: 13px; color: var(--muted); }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+
+  @media (max-width: 760px) {
+    header.hero { padding: 40px 0 32px; }
+    .hero .wrap, .two, .project { grid-template-columns: 1fr; gap: 28px; }
+    figure.portrait { order: -1; }
+    figure.portrait img { max-width: 220px; }
+    nav ul { gap: 14px; }
+    .jobs li { grid-template-columns: 1fr; gap: 2px; }
+    .ledger td.num { width: 5.5em; font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">russ gatrell</a>
+    <ul>
+      <li><a href="#about">about</a></li>
+      <li><a href="#work">work</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Financial data &amp; reconciliation · Utah</p>
+      <h1>Russ Gatrell</h1>
+      <p class="lede">I balance <em>billion-dollar checkbooks.</em></p>
+      <p class="sub">For 13 years at Overstock.com, I was the person teams brought in when the numbers didn't tie. I designed the reconciliations, wrote the matching logic, and traced every gap back to its cause before it reached an auditor.</p>
+      <div class="links">
+        <a class="btn primary" href="https://www.linkedin.com/in/russ-gatrell-finance-bi-dev" rel="me">LinkedIn</a>
+        <a class="btn" href="https://github.com/russgatrell" rel="me">GitHub</a>
+        <a class="btn" href="#projects">Side projects ↓</a>
+      </div>
+    </div>
+    <figure class="portrait">
+      <img src="portrait.png" width="900" height="1131" alt="Portrait of Russ Gatrell, drawn entirely from font characters">
+      <figcaption>Me, drawn in font characters by a program I wrote.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap two">
+    <div class="prose">
+      <h2>About</h2>
+      <p>I'm a financial data analyst with more than 20 years of SQL behind me. Most of that time has gone into one kind of problem: two sets of numbers that should agree, and don't.</p>
+      <p>At Overstock.com (later Beyond, Inc.) I owned cash and transaction reconciliation for a public e-commerce company whose money moved through card processors, PayPal and Venmo, marketplace partners, gift cards, a loyalty program, and even Bitcoin and Ethereum. I built daily reconciliations that tied each settlement back to the individual order line, and I worked side by side with accounting, external auditors, legal and fraud teams.</p>
+      <p>I like work where being careful really matters. I'm looking for remote individual-contributor or contract roles in financial reconciliation, payments data and finance analytics.</p>
+    </div>
+    <div>
+      <h2>A few things I've done</h2>
+      <table class="ledger">
+        <tr><td class="num">95%+</td><td>of gift cards matched to their source transactions when I rebuilt years of history for unclaimed-property litigation, from records that never separated purchased cards from promotional ones</td></tr>
+        <tr><td class="num">10%→95%</td><td>month-end report automation, after redesigning the whole month-end reporting workflow</td></tr>
+        <tr><td class="num">130+</td><td>financial reports moved from Teradata to Google BigQuery while keeping accounting and audit reporting accurate</td></tr>
+        <tr><td class="num">30 days</td><td>of missed charges recovered after I found a silently failed process that had stopped billing for unreturned replacements</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap two">
+    <div>
+      <h2>Experience</h2>
+      <ul class="jobs">
+        <li><span class="when">2012 – 2025</span><span class="what"><strong>Overstock.com / Beyond, Inc.</strong><span>Senior Manager, Data Engineering – Finance; promoted three times from BI Developer</span></span></li>
+        <li><span class="when">2010 – 2012</span><span class="what"><strong>Thindata 1:1</strong><span>Marketing Technical Reporting Analyst</span></span></li>
+        <li><span class="when">2008 – 2009</span><span class="what"><strong>Encover</strong><span>Data Analyst</span></span></li>
+        <li><span class="when">2002 – 2008</span><span class="what"><strong>Orchid Event Solutions</strong><span>Report Developer</span></span></li>
+        <li><span class="when">Education</span><span class="what"><strong>University of Utah</strong><span>B.S., Information Systems</span></span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Tools of the trade</h2>
+      <ul class="skills">
+        <li>SQL</li><li>Google BigQuery</li><li>Teradata</li><li>Oracle</li><li>SQL Server</li><li>Oracle ERP schemas</li>
+        <li>Python</li><li>PowerShell</li><li>Control-M</li><li>ReconNET</li>
+        <li>MicroStrategy</li><li>BusinessObjects</li><li>Qlik</li><li>SSRS</li><li>Crystal Reports</li>
+        <li>Salesforce</li><li>Workday</li><li>Shopify</li><li>Jira</li><li>Confluence</li>
+      </ul>
+      <h2 style="margin-top:36px">What I know well</h2>
+      <ul class="skills">
+        <li>Cash-to-GL reconciliation</li><li>Card settlement &amp; chargebacks</li><li>Gift card &amp; loyalty liabilities</li>
+        <li>Crypto &amp; multi-currency</li><li>Month-end close</li><li>SOX controls</li><li>SEC reporting support</li>
+        <li>Escheatment</li><li>Litigation data</li><li>Fraud reporting</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Side projects</h2>
+
+    <div class="project">
+      <div class="prose">
+        <h3>img-to-txt</h3>
+        <p>A program that redraws any picture using only the characters of a font. It renders every character a font has, sometimes tens of thousands, and for each patch of the image picks whichever letter or symbol looks most like it. I wrote the first version in 2019 and have rebuilt it since.</p>
+        <p><strong>Try this:</strong> the image on the right is the Mona Lisa, made entirely of Courier characters. Drag the slider to zoom in. Somewhere along the way she disappears, and up close it's just blocks and stray letters.</p>
+        <p><a href="https://github.com/russgatrell/img-to-txt">See the code on GitHub →</a></p>
+      </div>
+      <div class="viewer">
+        <div class="stage" id="stage"><img id="mona" src="mona_lisa.png" width="66" height="109" alt="The Mona Lisa drawn in Courier font characters"></div>
+        <label for="zoom">small <input id="zoom" type="range" min="40" max="1056" value="66" step="2"> close up</label>
+        <div class="hint" id="hint">Recognizable at this size.</div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="prose">
+        <h3>reencode-triage</h3>
+        <p>A tool that works out which videos in a big library are actually worth shrinking. It estimates the space each file would free, test-encodes short clips and scores their quality, and only replaces originals after you've approved them. It's the habit from my day job applied at home: measure first, then act on what the numbers say.</p>
+        <p><a href="https://github.com/russgatrell/reencode-triage">See the code on GitHub →</a></p>
+      </div>
+      <div class="viewer" style="font-family:var(--mono);font-size:13px;line-height:1.7;white-space:pre;overflow:auto;color:var(--muted)"># example output
+$ python reencode_triage.py scan D:\Videos
+$ python reencode_triage.py report
+  rank  saved GB  % saved  codec  res
+     1     18.4      71%   h264   3840x2160
+     2     11.9      68%   mpeg2  1920x1080
+     3      9.7      64%   h264   1920x1080
+$ python reencode_triage.py sample --top 15
+  measuring real encodes + VMAF quality…</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap prose">
+    <h2>Contact</h2>
+    <p>The best way to reach me is on <a href="https://www.linkedin.com/in/russ-gatrell-finance-bi-dev" rel="me">LinkedIn</a>. My code is on <a href="https://github.com/russgatrell" rel="me">GitHub</a>.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Russ Gatrell</span>
+    <span>Salt Lake City area, Utah</span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var img = document.getElementById('mona'), zoom = document.getElementById('zoom'), hint = document.getElementById('hint');
+    function update() {
+      var w = +zoom.value;
+      img.style.width = w + 'px';
+      img.style.height = Math.round(w * 437 / 264) + 'px';
+      hint.textContent = w < 110 ? 'Recognizable at this size.' : w < 300 ? 'Getting harder…' : w < 600 ? 'Is that still a face?' : 'Just characters now. Scroll around inside the frame.';
+    }
+    zoom.addEventListener('input', update);
+    update();
+  })();
+</script>
+</body>
+</html>
