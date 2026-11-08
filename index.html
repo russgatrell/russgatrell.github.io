@@ -60,7 +60,7 @@
 
   nav { border-bottom: 1px solid var(--rule); }
   nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 56px; font-family: var(--mono); font-size: 14px; }
-  nav .brand { font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: .02em; }
+  nav .brand { white-space: nowrap; font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: .02em; }
   nav ul { list-style: none; display: flex; gap: 22px; margin: 0; padding: 0; }
   nav ul a { color: var(--muted); text-decoration: none; }
   nav ul a:hover { color: var(--ink); }
@@ -117,7 +117,7 @@
     .hero .wrap, .two, .project { grid-template-columns: 1fr; gap: 28px; }
     figure.portrait { order: -1; }
     figure.portrait img { max-width: 220px; }
-    nav ul { gap: 14px; }
+    nav ul { gap: 12px; font-size: 13px; }
     .jobs li { grid-template-columns: 1fr; gap: 2px; }
     .ledger td.num { width: 5.5em; font-size: 19px; }
   }
